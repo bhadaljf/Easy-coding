@@ -1,10 +1,10 @@
-# Easy-coding
+# smooth-coding-skills
 
 <a id="zh"></a>
 
 [中文](#zh) | [English](#en)
 
-Easy-coding 是一个用于存放多个 Codex Skill 的仓库。
+smooth-coding-skills 是一个用于存放多个 Codex Skill 的仓库。
 
 每个 Skill 都是独立目录，可以单独下载、单独安装、单独调用，不需要把整个仓库一起塞进本地技能目录。
 
@@ -50,7 +50,7 @@ skills/
 ### Skill 标题
 
 Skill 内部标题仍然是 `ZZ`。  
-仓库名是 `Easy-coding`，只是为了方便集中管理多个 Skill。
+仓库名是 `smooth-coding-skills`，只是为了方便集中管理多个 Skill。
 
 ### 目录位置
 
@@ -85,26 +85,26 @@ skills/zz
 你可以直接对 Agent 这样说：
 
 ```text
-请从 GitHub 仓库 bhadaljf/Easy-coding 安装 skills/zz 这个 Codex skill
+请从 GitHub 仓库 bhadaljf/smooth-coding-skills 安装 skills/zz 这个 Codex skill
 ```
 
 或者这样说：
 
 ```text
-用 $skill-installer 从 bhadaljf/Easy-coding 安装 skills/zz
+用 $skill-installer 从 bhadaljf/smooth-coding-skills 安装 skills/zz
 ```
 
 也可以直接发仓库网址并补一句：
 
 ```text
-这是我的 skills 仓库：https://github.com/bhadaljf/Easy-coding
+这是我的 skills 仓库：https://github.com/bhadaljf/smooth-coding-skills
 请帮我安装其中的 skills/zz
 ```
 
 如果 Agent 走的是 GitHub 路径安装逻辑，核心目标就是让它安装：
 
 ```text
-repo: bhadaljf/Easy-coding
+repo: bhadaljf/smooth-coding-skills
 path: skills/zz
 ```
 
@@ -146,7 +146,7 @@ skills/<skill-name>
 
 <a id="en"></a>
 
-Easy-coding is a multi-skill repository for Codex.
+smooth-coding-skills is a multi-skill repository for Codex.
 
 Each skill lives in its own folder and can be installed independently. Users do not need to copy the whole repository into their local skills directory.
 
@@ -192,7 +192,7 @@ Good use cases:
 ### Skill Title
 
 The skill title remains `ZZ`.  
-The repository name `Easy-coding` is only for organizing multiple skills in one place.
+The repository name `smooth-coding-skills` is only for organizing multiple skills in one place.
 
 ### Path In This Repository
 
@@ -225,26 +225,26 @@ This is the best path when you want another Agent to install it for you.
 You can tell the Agent:
 
 ```text
-Please install the Codex skill at skills/zz from the GitHub repository bhadaljf/Easy-coding
+Please install the Codex skill at skills/zz from the GitHub repository bhadaljf/smooth-coding-skills
 ```
 
 Or:
 
 ```text
-Use $skill-installer to install skills/zz from bhadaljf/Easy-coding
+Use $skill-installer to install skills/zz from bhadaljf/smooth-coding-skills
 ```
 
 Or send the repository URL directly:
 
 ```text
-This is my skills repository: https://github.com/bhadaljf/Easy-coding
+This is my skills repository: https://github.com/bhadaljf/smooth-coding-skills
 Please install skills/zz from it
 ```
 
 The important install target is:
 
 ```text
-repo: bhadaljf/Easy-coding
+repo: bhadaljf/smooth-coding-skills
 path: skills/zz
 ```
 
