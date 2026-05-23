@@ -1,0 +1,4 @@
+interface:
+  display_name: "ZZ"
+  short_description: "每次先简短复述你的目标、范围和约束，再继续执行任务"
+  default_prompt: "Use $zz to restate the user's intent and constraints naturally before taking action, and ask clarifying questions if anything material is uncertain."
