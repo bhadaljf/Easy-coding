@@ -41,6 +41,14 @@ In practice, typing “please repeat your understanding of my request first...�
 2. Press the Up arrow once
 3. Hit Enter
 
+### Extended Use
+
+You can hand your own most frequently repeated sentence to the Agent and let it rewrite the skill description, so `ZZ` becomes your own personal shortcut for repeated instructions.
+
+```text
+Example: Please follow the /zz skill pattern and replace its content with “Please answer me in Chinese throughout the whole conversation”
+```
+
 ### Path
 
 Repository path:
