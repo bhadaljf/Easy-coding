@@ -2,11 +2,11 @@
 
 [中文](README.md)
 
-A small lazy-skill collection, updated from time to time. If you like it, feel free to star the repository.
+A collection of lazy-useful skills, updated from time to time. If you like it, feel free to star the repository.
 
 smooth-coding-skills is a repository for multiple Codex skills.
 
-Each skill lives in its own folder and can be downloaded, installed, and invoked independently. You do not need to copy the entire repository into your local skills directory.
+Each skill lives in its own folder and can be downloaded, installed, and invoked independently. You do not need to place the entire repository inside your local Codex skills directory.
 
 ## Skill Index
 
@@ -26,19 +26,19 @@ skills/
 
 Two common paths:
 
-1. User: install a specific skill locally.
-2. AI or Agent user: send the skill path to an Agent and let it install the target skill for you.
+1. User: manually install a specific skill into the local Codex skills directory.
+2. AI or Agent user: send the skill path from this repository to an Agent and let it install the target skill for you.
 
 ## Skill: ZZ
 
 ### Description
 
-`ZZ` is a very lightweight alignment skill. Its job is to **force** the Agent to restate its understanding of your input before doing substantive work, and ask about uncertain parts so the user and the Agent stay aligned.
+`ZZ` is a very lightweight alignment skill. Its purpose is to **force** the Agent to restate its understanding of your input before doing substantive work, ask about uncertain parts, align the user and the Agent, and only start real work after alignment is confirmed.
 
-In practice, typing “please repeat your understanding of my request first...” every time gets tiring, so it is easier to just call `/ZZ`. The name intentionally uses the last letter of the alphabet so it stays at the end of the skill list, making it easy to invoke in **three steps**:
+In practice, typing “please repeat your understanding of my request first...” every time gets tiring, so it is easier to just call `/ZZ`. The name intentionally uses the last letter `Z` so the skill stays at the end of the skill list, making invocation possible in **three steps**:
 
-1. Type `/` to open the skill picker
-2. Press the Up arrow twice
+1. Type `/` to open the picker
+2. Press the Up arrow once
 3. Hit Enter
 
 ### Path

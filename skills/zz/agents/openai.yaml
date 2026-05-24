@@ -1,4 +1,4 @@
 interface:
   display_name: "ZZ"
-  short_description: "每次先简短复述你的目标、范围和约束，再继续执行任务"
-  default_prompt: "Use $zz to always output a visible understanding summary starting with '我的理解：' before taking action, and ask clarifying questions if anything material is uncertain."
+  short_description: "每次只先复述理解与疑问，确认无偏差后再正式开工"
+  default_prompt: "Use $zz to make this reply contain only a visible understanding summary, any uncertainties, and a final confirmation question before starting work in the next reply."
