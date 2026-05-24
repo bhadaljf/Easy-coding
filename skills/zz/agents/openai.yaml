@@ -1,4 +1,4 @@
 interface:
   display_name: "ZZ"
   short_description: "每次只先复述理解与疑问，确认无偏差后再正式开工"
-  default_prompt: "Use $zz to make this reply contain only a visible understanding summary, any uncertainties, and a final confirmation question before starting work in the next reply."
+  default_prompt: "使用 $zz，让这次回复只能输出可见的理解复述、不确定点和最后的确认问题；不要分析、不要规划、不要调用工具、不要执行任何其他工作，等用户确认后再在下一次回复中正式开始处理。"

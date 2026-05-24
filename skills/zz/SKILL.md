@@ -1,52 +1,54 @@
 ---
 name: zz
-description: Force a gated alignment-only first response before action. Use when the user wants Codex to spend the current reply only on restating the user's goal, scope, assumptions, and uncertainties, then ask whether the understanding is correct before starting work in the next reply.
+description: 强制先进行一次仅用于对齐的首轮回复，再开始执行。适用于用户希望 Codex 在当前这次回复里只能复述用户的目标、范围、假设和不确定点，并在最后询问理解是否正确；在这次交互里不允许进行分析、规划、调用工具或任何其他工作，必须等用户确认后再在下一次回复中正式开工的场景。
 ---
 
 # ZZ
 
-Before doing any substantive work, your response for this invocation must only contain:
+在开始任何实质工作之前，这次调用的回复内容必须且只能包含：
 
-1. your understanding summary of the user's latest message
-2. any material uncertainties or clarifying questions
-3. a final question asking whether the understanding matches the user's intent
+1. 你对用户最新消息的理解复述
+2. 任何关键不确定点或澄清问题
+3. 最后一句确认问题，用来询问你的理解是否符合用户本意
 
-Do not include analysis, planning, tool use, implementation, or execution in this response.
+这次回复里严禁包含分析、计划、建议方案、工具调用、实现步骤、实际执行，或任何其他与“复述 + 提问确认”无关的内容。
 
-This alignment-only response is mandatory on every invocation of this skill.
+这种“只做对齐”的回复在每次调用本 Skill 时都是强制要求，不是建议。
 
-Start with the exact heading:
+必须用下面这个标题开头：
 
 ```text
 我的理解：
 ```
 
-Then restate your understanding in a natural way.
+然后自然地复述你的理解。
 
-Keep the restatement concrete and task-oriented:
+复述时要具体、面向任务：
 
-- say what the user wants done
-- say the relevant scope or target object
-- say important constraints or preferences
-- say any assumption you are making if something is still implicit
+- 说明用户希望你做什么
+- 说明相关范围或目标对象
+- 说明重要约束或偏好
+- 说明你当前做了哪些仍属隐含的假设
 
-If something material is uncertain, ask the user before proceeding.
+如果存在关键不确定点，先问用户，再继续。
 
-Even if the request looks clear, still ask whether the understanding matches before starting work.
+即使请求看起来已经很清楚，也仍然要先询问“我的理解是否正确”，然后才能开工。
 
-Rules:
+规则：
 
-- Always output `我的理解：` before anything else.
-- This response must only contain restatement, uncertainties, and the final confirmation question.
-- If a key detail is missing, ambiguous, or could change the implementation direction, ask a direct clarifying question.
-- Do not turn the restatement into filler, apology, or generic politeness.
-- Do not repeat the entire user message; compress it into a practical execution summary.
-- If the task has multiple stages, restate only the part you are acting on now.
-- Do not skip the understanding summary even when the task looks obvious or trivial.
-- Do not include `接下来我会…` or any equivalent implementation preview in this response.
-- Do not use tools or start implementation until the user confirms that the understanding is correct.
+- 永远先输出 `我的理解：`，再输出其他内容。
+- 这次回复只能包含复述、不确定点和最后的确认问题。
+- 一旦调用本 Skill，这次交互里模型不允许做复述和提问确认之外的任何事情。
+- 如果某个关键细节缺失、含糊，或会改变实现方向，就直接提澄清问题。
+- 不要把复述写成废话、道歉或泛泛的客套。
+- 不要完整重复用户原话，要压缩成可执行的理解摘要。
+- 如果任务有多个阶段，只复述你当前准备处理的这一部分。
+- 即使任务看起来非常简单，也不能跳过理解复述。
+- 这次回复里不要出现 `接下来我会……` 或任何等价的执行预告。
+- 这次回复里不要给解决方案、不要给下一步计划、不要给代码、不要给命令、不要做总结性交付。
+- 在用户确认理解无误之前，不要调用工具，也不要开始实现。
 
-Preferred pattern:
+推荐格式：
 
 ```text
 我的理解：
@@ -58,7 +60,7 @@ Preferred pattern:
 如果以上理解符合你的意思，我再开始处理，可以吗？
 ```
 
-or, if there are no material uncertainties:
+如果没有关键不确定点，也用这个格式：
 
 ```text
 我的理解：
